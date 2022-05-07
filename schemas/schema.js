@@ -9,9 +9,9 @@ import project from './project'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    post,
-    author,
-    category,
     project,
+    post,
+    category,
+    author,
   ]),
 })

@@ -7,6 +7,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'slug',
@@ -16,6 +17,7 @@ export default {
         source: 'title',
         maxLength: 96,
       },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'image',
@@ -54,11 +56,13 @@ export default {
       name: 'description',
       title: 'Description',
       type: 'markdown',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'body',
       title: 'Body',
       type: 'markdown',
+      validation: Rule => Rule.required(),
     },
   ],
 

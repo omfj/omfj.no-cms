@@ -7,6 +7,22 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'emoji',
+      title: 'Emoji',
+      type: 'string',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'color',
@@ -22,4 +38,17 @@ export default {
       type: 'text',
     },
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+      emoji: 'emoji',
+    },
+    prepare(selection) {
+      const {title, emoji} = selection;
+      return {
+        title: `${emoji ?? ""} ${title}`,
+      }
+    },
+  }
 }
