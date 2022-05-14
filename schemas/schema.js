@@ -1,6 +1,8 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
+import externalLink from './externalLink'
+
 import category from './category'
 import post from './post'
 import author from './author'
@@ -13,5 +15,6 @@ export default createSchema({
     post,
     category,
     author,
+    externalLink,
   ]),
 })

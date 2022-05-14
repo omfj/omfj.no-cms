@@ -50,6 +50,12 @@ export default {
       title: 'Body',
       type: 'markdown',
     },
+    {
+      name: 'externalLinks',
+      title: 'External Links',
+      type: 'array',
+      of: [{type: 'externalLink'}],
+    }
   ],
 
   preview: {
