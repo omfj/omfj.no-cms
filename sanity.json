@@ -13,9 +13,8 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "markdown",
-    "color-picker",
-    "emoji-picker",
-    "@sanity/vision"
+    "@sanity/vision",
+    "@sanity/color-input"
   ],
   "env": {
     "development": {

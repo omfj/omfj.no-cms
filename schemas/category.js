@@ -27,7 +27,7 @@ export default {
     {
       name: 'color',
       title: 'Color',
-      type: 'colorPicker',
+      type: 'color',
       options: {
         disableAlpha: true,
       }
