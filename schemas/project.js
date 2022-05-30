@@ -26,12 +26,10 @@ export default {
       to: {type: 'author'},
     },
     {
-      name: 'image',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'images',
+      title: 'Project Images',
+      type: 'array',
+      of: [{type: "image"}],
     },
     {
       name: 'categories',
