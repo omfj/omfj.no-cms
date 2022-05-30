@@ -14,7 +14,8 @@
     "@sanity/desk-tool",
     "markdown",
     "@sanity/vision",
-    "@sanity/color-input"
+    "@sanity/color-input",
+    "media"
   ],
   "env": {
     "development": {
